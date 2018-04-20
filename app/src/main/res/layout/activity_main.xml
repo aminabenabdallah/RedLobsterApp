@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/redlobster" />
+
+    <TextView
+        android:id="@+id/Location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="RED LOBSTER"
+        android:textColor="#D50000"
+        android:textSize="48dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_below="@id/photo"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Location"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:text=" 5201 S Pulaski Rd "
+        android:textColor="#00B0FF"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/state"
+         android:layout_height="wrap_content"
+        android:text="Chicago, IL 60632"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/address"
+        android:textColor="#00B0FF"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/state"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="#00B0FF"
+        android:text="(773) 284-7000"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textSize="24dp" />
+
+</RelativeLayout>
